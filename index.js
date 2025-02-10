@@ -13,11 +13,7 @@ const app = express();
 
 app.use(
   cors({
-    origin: [
-      'http://localhost:3000',
-      'https://vercel.com/chintans-projects-59165b62/db-auth-frontend/AYwhnzoxhaywsi9DjvouL9ATi62E',
-    ],
-    credentials: true,
+    origin: '*', // Allows all origins
     methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'],
     allowedHeaders: ['Content-Type', 'Authorization'],
   })
