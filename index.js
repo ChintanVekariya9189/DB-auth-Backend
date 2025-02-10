@@ -11,11 +11,12 @@ connectDB();
 // Initialize Express app
 const app = express();
 
-// CORS Configuration
-// CORS Configuration
 app.use(
   cors({
-    origin: ['http://localhost:3000', 'https://db-auth-frontend.vercel.app'], // Allow both local and Vercel frontend
+    origin: [
+      'http://localhost:3000',
+      'https://vercel.com/chintans-projects-59165b62/db-auth-frontend/AYwhnzoxhaywsi9DjvouL9ATi62E',
+    ],
     credentials: true,
     methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'],
     allowedHeaders: ['Content-Type', 'Authorization'],
